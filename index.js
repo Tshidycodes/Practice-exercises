@@ -35,7 +35,7 @@ for (let i = 0; i < fruits.length; i++) {
 */
 
 // FOR LOOP to run through an object because objects do not have indexes or order and are accessed through their properties:
-
+/*
 let data = { name: "John", age: 34, maritalStatus: true };
 console.log(data["maritalStatus"]);
 for (let element in data) {
@@ -46,3 +46,15 @@ for (let element in data) {
 //Nested Loops and 2-Dimentional  Arrays
 
 let numberGrid = [[1, 2, 3], [4.5, 6], [7, 8, 9], [0]];
+*/
+
+//Looping through an array
+let fruits = ["orange", "lemon", "apple"];
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+//Here is an alternative for that
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+//this loop goes through the elements itselves and not the indices
