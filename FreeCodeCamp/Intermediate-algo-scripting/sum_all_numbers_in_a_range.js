@@ -10,7 +10,7 @@ function sumAll(arr) {
 
   let sumAll = 0;
   for (let i = arr[0]; i <= arr[1]; i++) {
-    sumAll += arr[i];
+    sumAll += i;
   }
   return sumAll;
 }
