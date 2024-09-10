@@ -29,3 +29,22 @@ const tree = {
 };
 
 printChildrenRecursive(tree);
+
+const teamStructure = {
+  name: "Kunal",
+  teams: [
+    { name: "Harish", teams: [{ name: "Alisha", teams: [] }] },
+    { name: "Anurang", teams: [] },
+  ],
+};
+
+function getTeamDetails(t) {
+  //baseCase
+  if (t.teams.length === 0) return;
+
+  t.teams.forEach((team) => {
+    console.log(team.name);
+    getTeamDetails(team);
+  });
+}
+getTeamDetails(teamStructure); //pass the complete structure/object
